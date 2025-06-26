@@ -1,0 +1,33 @@
+<!-- If -->
+<button (click)="showMensage = !showMensage">
+    {{ showMensage ? 'Ocultar': 'Mostrar' }} mensagem
+</button>
+
+@if (showMensage) {
+  <p>Bem-vindo ao Angular</p>
+}
+
+<hr>
+
+<!-- For -->
+<ul>
+    @for (nome of listNames; track nome) {
+        <li>{{ nome }}</li>
+    }
+</ul>
+
+<hr>
+
+<!-- switch -->
+
+@switch (statusUser) {
+  @case ('ativo') {
+    <p>Usuário está ativo.</p>
+  }
+  @case ('inativo') {
+    <p>Usuário está inativo.</p>
+  }
+  @default {
+    <p>Sem informações de status.</p>
+  }
+}

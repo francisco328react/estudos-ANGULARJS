@@ -1,0 +1,12 @@
+<h2>Lista de usuarios</h2>
+
+<ul>
+    @for(name of usuarios; track name) {
+        <li>{{ name }}</li>
+    }
+</ul>
+
+<h2>Detalhes do Usuário</h2>
+@if(id) {
+    <p>ID do usuário: {{ id }}</p>
+}

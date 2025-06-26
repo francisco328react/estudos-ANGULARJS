@@ -1,0 +1,18 @@
+<nav>
+  <a routerLink="/saudacao">Saudação</a> |
+  <a routerLink="/data-binding">Data Binding</a> |
+  <a routerLink="/diretivas">Diretivas</a> |
+  <a routerLink="/usuario">Usuário</a> |
+  <a routerLink="/api-usuarios">API Usuários</a> |
+  <a routerLink="/contador">Contador</a> |
+  <a routerLink="/exibir-nome">Exibir Nome</a> |
+  <a routerLink="/pipes">Pipes</a> |
+</nav>
+
+<hr />
+
+<h2>Componente Pai</h2>
+<input [(ngModel)]="nomeUsuario" placeholder="Digite seu nome" />
+<app-exibir-nome [name]="nomeUsuario" />
+
+<router-outlet></router-outlet>

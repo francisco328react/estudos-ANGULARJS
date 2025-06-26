@@ -1,0 +1,25 @@
+<h2>API de usuários</h2>
+
+@if(carregando) {
+    <p>Carregando usuários...</p>
+}
+
+<ul>
+    @if(!carregando) {
+        <li>
+            @for(usuarios of usuarios; track usuarios) {
+                {{ usuarios.name }} - {{ usuarios.email }} <br>
+            }
+        </li>
+    }
+</ul>
+
+
+<h2>Criando links dinâmicos</h2>
+<ul>
+    @for(usuario of usuarios; track usuario.id) {
+        <a [routerLink]="['/usuario', usuario.id]">
+            {{ usuario.name }} <br>
+        </a>
+    }
+</ul>

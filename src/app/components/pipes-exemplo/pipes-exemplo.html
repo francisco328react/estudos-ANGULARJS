@@ -1,0 +1,8 @@
+<h2>Pipes Exemplo</h2>
+
+<p><strong>Original:</strong> {{ name }}</p>
+<p><strong>Maiúsculo:</strong> {{ name | uppercase }}</p>
+<p><strong>Minúsculo:</strong> {{ name | lowercase }}</p>
+<p><strong>Data Atual:</strong> {{ dataHoje | date:'fullDate' }}</p>
+<p><strong>Valor (Moeda):</strong> {{ valor | currency:'BRL' }}</p>
+<p><strong>Valor com 1 casa decimal:</strong> {{ valor | number:'1.1-1' }}</p>

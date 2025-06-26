@@ -1,0 +1,13 @@
+<!-- Interpolação -->
+<p>Meu nome é {{name}} e eu tenho {{idade}} anos.</p><br>
+
+<!-- Property Binding -->
+<input [value]="name" readonly /><br><br>
+
+<!-- Event Binding -->
+<button (click)="showAlert()">Clique Aqui</button><br><br>
+
+<!-- Two-Way Binding -->
+<input [(ngModel)]="msg" placeholder="digite algo" />
+<p>VocÊ digitou: {{msg}}</p><br>
+
